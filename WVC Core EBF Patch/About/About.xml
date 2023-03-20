@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ModMetaData>
+	<name>WVC Core Elite Bionics Framework Patch</name>
+	<author>ChakMlaxpin</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>ChakMlaxpin.WVCCoreEBFPatch</packageId>
+	<description>A small patch to give the HP modifiers to the bionics added in WVC Core.</description>
+	<modDependencies>
+		<li>
+			<packageId>wvc.sergkart.core</packageId>
+			<displayName>WVC Core</displayName>
+			<downloadUrl>https://github.com/WVCSergkart/WVC_Core/releases/</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2875630809</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>V1024.EBFramework</packageId>
+			<displayName>Elite Bionics Framework</displayName>
+			<downloadUrl>https://https://github.com/Vectorial1024/EliteBionicsFramework/releases</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1665403571</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>wvc.sergkart.core</li>
+		<li>V1024.EBFramework</li>
+	</loadAfter>
+	<loadBefore>
+		<li>krkr.rocketman</li>
+	</loadBefore>
+</ModMetaData>

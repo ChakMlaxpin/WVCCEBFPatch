@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<Patch>
+
+	<!--=====================================================================-->
+
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>V1024.EBFramework</li>
+		</mods>
+		<packageId>true</packageId>
+		<logic>and</logic>
+		<caseTrue>
+			
+			<!-- <import "EBF.HediffDefCompProperties_MaxHPAdjust"> -->
+			
+			<Operation Class="PatchOperationConditional">
+				<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_Ancient"]/comps</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_Ancient"]</xpath>
+					<value>
+						<comps>
+							<li Class="EBF.HediffDefs.HediffDefCompProperties_MaxHPAdjust">
+								<scaleAdjustment>0.4</scaleAdjustment>
+							</li>
+						</comps>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_Ancient"]/comps</xpath>
+					<value>
+							<li Class="EBF.HediffDefs.HediffDefCompProperties_MaxHPAdjust">
+							<scaleAdjustment>0.4</scaleAdjustment>
+							</li>
+					</value>
+				</match>
+			</Operation>
+
+			<Operation Class="PatchOperationConditional">
+				<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_Mechanoid"]/comps</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_Mechanoid"]</xpath>
+					<value>
+						<comps>
+							<li Class="EBF.HediffDefs.HediffDefCompProperties_MaxHPAdjust">
+								<scaleAdjustment>0.6</scaleAdjustment>
+							</li>
+						</comps>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_Mechanoid"]/comps</xpath>
+					<value>
+							<li Class="EBF.HediffDefs.HediffDefCompProperties_MaxHPAdjust">
+							<scaleAdjustment>0.6</scaleAdjustment>
+							</li>
+					</value>
+				</match>
+			</Operation>
+
+			<Operation Class="PatchOperationConditional">
+				<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_NodeGreen" or HediffDef="WVC_Hediff_BodyPart_NodeRed" or HediffDef="WVC_Hediff_BodyPart_NodeViolet" or HediffDef="WVC_Hediff_BodyPart_NodeYellow"]/comps</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_NodeGreen" or HediffDef="WVC_Hediff_BodyPart_NodeRed" or HediffDef="WVC_Hediff_BodyPart_NodeViolet" or HediffDef="WVC_Hediff_BodyPart_NodeYellow"]</xpath>
+					<value>
+						<comps>
+							<li Class="EBF.HediffDefs.HediffDefCompProperties_MaxHPAdjust">
+								<scaleAdjustment>0.75</scaleAdjustment>
+							</li>
+						</comps>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_NodeGreen" or HediffDef="WVC_Hediff_BodyPart_NodeRed" or HediffDef="WVC_Hediff_BodyPart_NodeViolet" or HediffDef="WVC_Hediff_BodyPart_NodeYellow"]/comps</xpath>
+					<value>
+							<li Class="EBF.HediffDefs.HediffDefCompProperties_MaxHPAdjust">
+							<scaleAdjustment>0.75</scaleAdjustment>
+							</li>
+					</value>
+				</match>
+			</Operation>
+
+			<Operation Class="PatchOperationConditional">
+				<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_NodeBlue"]/comps</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_NodeBlue"]</xpath>
+					<value>
+						<comps>
+							<li Class="EBF.HediffDefs.HediffDefCompProperties_MaxHPAdjust">
+								<scaleAdjustment>0.9</scaleAdjustment>
+							</li>
+						</comps>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_NodeBlue"]/comps</xpath>
+					<value>
+							<li Class="EBF.HediffDefs.HediffDefCompProperties_MaxHPAdjust">
+							<scaleAdjustment>0.9</scaleAdjustment>
+							</li>
+					</value>
+				</match>
+			</Operation>
+
+			<Operation Class="PatchOperationConditional">
+				<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_Archotech"]/comps</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_Archotech"]</xpath>
+					<value>
+						<comps>
+							<li Class="EBF.HediffDefs.HediffDefCompProperties_MaxHPAdjust">
+								<scaleAdjustment>1.0</scaleAdjustment>
+							</li>
+						</comps>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_Archotech"]/comps</xpath>
+					<value>
+							<li Class="EBF.HediffDefs.HediffDefCompProperties_MaxHPAdjust">
+							<scaleAdjustment>1.0</scaleAdjustment>
+							</li>
+					</value>
+				</match>
+			</Operation>
+
+		</caseTrue>
+	</Operation>
+
+	<!--=====================================================================-->
+
+
+</Patch>
