@@ -7,7 +7,21 @@
 		<li>1.4</li>
 	</supportedVersions>
 	<packageId>ChakMlaxpin.WVCCoreEBFPatch</packageId>
-	<description>A small patch to give the HP modifiers to the bionics added in WVC Core.</description>
+	<description>A small patch to give the HP modifiers to the bionics added in WVC Core.
+	
+The HP modifiers for the different tiers of bionics added by WVC Core are as follows:
+
+- Torture +20%
+- Experimental +30%
+- Cybernetic +35%
+- Ancient +40%
+- Mechanoid +60%
+- Green, red, violet and yellow nodes +75%
+- Blue node +90%
+- Archotech +100%
+
+This is my first mod and I'd like to give a big thank you to Owlchemist for helping me figure out the stuff I'd managed to miss that was stopping this mod from working.
+	</description>
 	<modDependencies>
 		<li>
 			<packageId>wvc.sergkart.core</packageId>
