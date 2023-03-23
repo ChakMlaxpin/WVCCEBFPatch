@@ -21,6 +21,8 @@ The HP modifiers for the different tiers of bionics added by WVC Core are as fol
 - Archotech +100%
 
 This is my first mod and I'd like to give a big thank you to Owlchemist for helping me figure out the stuff I'd managed to miss that was stopping this mod from working.
+
+Github: https://github.com/ChakMlaxpin/WVCCEBFPatch
 	</description>
 	<modDependencies>
 		<li>
