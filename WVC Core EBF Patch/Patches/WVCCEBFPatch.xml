@@ -3,7 +3,7 @@
 
 <Patch>
 
-	<!--=====================================================================-->
+	<!-- Checks to ensure EBF is installed before applying patch -->
 
 	<Operation Class="XmlExtensions.FindMod">
 		<mods>
@@ -12,7 +12,7 @@
 		<packageId>true</packageId>
 		<caseTrue>
 			
-			<!-- <import "EBF.HediffDefCompProperties_MaxHPAdjust"> -->
+			<!-- looks for <comps> of each set of bionics and adds if missing -->
 			
 			<Operation Class="PatchOperationConditional">
 				<xpath>/Defs/HediffDef[
@@ -47,6 +47,8 @@
 					</value>
 				</nomatch>
 			</Operation>
+			
+			<!-- Health adjustment patches -->
 			
 			<Operation Class="PatchOperationAdd">
 					<xpath>/Defs/HediffDef[@Name="WVC_Hediff_BodyPart_Torture"]/comps</xpath>
